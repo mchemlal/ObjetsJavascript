@@ -21,3 +21,15 @@ compte1.debiter(100);
 console.log(compte1.solde); // nouveau solde suite à appel de la fonction "crediter"
 
 compte1.afficherSolde(titulaire1.prenom, titulaire1.nom);
+
+let compteEpargne1 = new CompteEpargne(titulaire1, 15);
+
+compteEpargne1.crediter(100);
+compteEpargne1.crediter(100);
+compteEpargne1.crediter(100);
+console.log(compteEpargne1);
+
+compteEpargne1.debiter(50);
+console.log(compteEpargne1);
+
+compteEpargne1.afficherSolde(titulaire1.prenom, titulaire1.nom);
